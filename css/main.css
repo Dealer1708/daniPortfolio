@@ -41,9 +41,24 @@ a:hover {
     font-size: 4rem;
     text-transform: uppercase
 }
+.skill-section-title {
+    margin-bottom: 1rem;
+    font-size: 4rem;
+    text-transform: uppercase
+}
+.skill-section-subtitle {
+    margin-bottom: 4.5rem;
+    font-size: 2rem;
+    /* text-transform: uppercase */
+}
 
 @media(max-width: 37.5em) {
     .section-title {
+        font-size: 2.8rem
+    }
+}
+@media(max-width: 37.5em) {
+    .skill-section-title {
         font-size: 2.8rem
     }
 }
@@ -413,6 +428,9 @@ section .row span {
 #about .about-wrapper {
     grid-template-columns: 1fr 1fr
 }
+/* #skills .skill-wrapper {
+    grid-template-columns: 1fr 1fr
+} */
 
 @media(max-width: 37.5em) {
     #about .about-wrapper {
@@ -420,8 +438,20 @@ section .row span {
         grid-template-columns: 1fr
     }
 }
+@media(max-width: 37.5em) {
+    #skills .skill-wrapper {
+        padding-bottom: 5rem;
+        /* grid-template-columns: 1fr */
+    }
+}
 
 #about .about-wrapper__image {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center
+}
+#skills .skill-wrapper__image {
     display: flex;
     height: 100%;
     align-items: center;
@@ -433,9 +463,19 @@ section .row span {
     border-radius: 3%;
     width: 100%
 }
+#skills .skill-wrapper__image img {
+    /* max-width: 350px; */
+    border-radius: 3%;
+    /* width: 100% */
+}
 
 @media(max-width: 75em) {
     #about .about-wrapper__image {
+        height: 100%
+    }
+}
+@media(max-width: 75em) {
+    #skills .skill-wrapper__image {
         height: 100%
     }
 }
@@ -445,8 +485,20 @@ section .row span {
         padding-bottom: 4rem
     }
 }
+@media(max-width: 48em) {
+    #skills .skill-wrapper__image {
+        padding-bottom: 4rem
+    }
+}
 
 #about .about-wrapper__info {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left
+}
+#skills .skill-wrapper__info {
     display: flex;
     height: 100%;
     justify-content: center;
@@ -460,9 +512,15 @@ section .row span {
         text-align: center
     }
 }
+@media(max-width: 48em) {
+    #skills .skill-wrapper__info {
+        align-items: center;
+        text-align: center
+    }
+}
 
 #contact {
-    background-image: linear-gradient(135deg, #36d1dc 0%, #5b86e5 100%);
+    background-image: linear-gradient(135deg, #09203a 25%, #144883 75%);
     -webkit-clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
     clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
     padding: 15rem 0 10rem 0;
