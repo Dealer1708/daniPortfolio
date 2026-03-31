@@ -838,3 +838,120 @@ section .row span {
         transform: none
     }
 }
+
+#skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  background-color: #010e1b;
+  margin-top: -2rem; /* Уменьшили расстояние между секциями */
+}
+
+#skills .skill-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+#skills .skill-icons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Адаптивная сетка */
+    gap: 1.5rem; /* Расстояние между иконками */
+    width: 100%;
+    max-width: 1200px; /* Ограничение ширины */
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.125); /* Полупрозрачный фон для коробки */
+    border-radius: 15px; /* Закругленные углы */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Легкая тень для объема */
+  }
+
+#skills .skill-icons img {
+  width: 80px; /* Размер иконок */
+  height: 80px;
+  object-fit: contain; /* Сохраняем пропорции иконок */
+  transition: transform 0.3s ease; /* Анимация при наведении */
+}
+
+#skills .skill-icons img:hover {
+  transform: scale(1.1); /* Увеличение при наведении */
+}
+#experience {
+    padding: 4rem 2rem; /* Consistent padding with other sections */
+    background-color: inherit; /* Use the same background as other sections */
+    color: inherit; /* Use the same text color as other sections */
+  }
+  
+  #experience .section-title {
+    font-size: 4rem; /* Match the title size with other sections */
+    text-align: center;
+    margin-bottom: 2rem; /* Add more spacing below the title */
+    color: inherit; /* Use the same color as other section titles */
+  }
+  
+  #experience .experience-section-subtitle {
+    font-size: 2.6rem; /* Match subtitle size with other sections */
+    text-align: center;
+    margin-bottom: 2.5rem; /* Add more spacing below the subtitle */
+    color: inherit; /* Use the same color as other section subtitles */
+  }
+  
+  #experience .experience-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem; /* Increase spacing between items */
+  }
+  
+  #experience .experience-item {
+    padding: 2rem; /* Add more padding for better spacing */
+    border-left: 5px solid #36d1dc; /* Slightly thicker accent border */
+    background-color: rgba(255, 255, 255, 0.07); /* Slightly more visible background */
+    border-radius: 12px; /* Slightly more rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Add a subtle shadow for depth */
+  }
+  
+  #experience .experience-item-title {
+    font-size: 1.8rem; /* Increase title size for better readability */
+    font-weight: bold;
+    margin-bottom: 0.75rem; /* Add more spacing below the title */
+  }
+  
+  #experience .experience-item-company {
+    font-size: 1.4rem; /* Slightly larger company name */
+    font-style: italic;
+    margin-bottom: 0.75rem; /* Add more spacing below the company name */
+  }
+  
+  #experience .experience-item-duration {
+    font-size: 1.2rem; /* Slightly larger duration text */
+    color: #d1d1d1; /* Subtle color for duration */
+    margin-bottom: 1.25rem; /* Add more spacing below the duration */
+  }
+  #experience .experience-item-description {
+    list-style: none; /* Убираем стандартные маркеры списка */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Используем Flexbox для выравнивания */
+    flex-direction: column; /* Располагаем элементы вертикально */
+    align-items: center; /* Выравниваем элементы по центру */
+    gap: 0.75rem; /* Увеличиваем расстояние между элементами */
+  }
+  
+  #experience .experience-item-description li {
+    font-size: 1.5rem; /* Увеличиваем размер текста */
+    line-height: 1.75; /* Увеличиваем межстрочный интервал */
+    margin-bottom: 0; /* Убираем нижний отступ */
+    color: #ffffff; /* Белый текст для контраста */
+    background-color: rgba(54, 209, 220, 0.1); /* Легкий фон для элементов */
+    padding: 0.6rem 1rem; /* Увеличиваем внутренние отступы */
+    border-radius: 8px; /* Закругленные углы */
+    width: auto; /* Элементы занимают только необходимую ширину */
+    text-align: center; /* Центрируем текст внутри элементов */
+  }
+  
+  #experience .experience-item-description li:hover {
+    background-color: rgba(54, 209, 220, 0.2); /* Темнее фон при наведении */
+    transform: scale(1.05); /* Легкое увеличение при наведении */
+    transition: all 0.3s ease; /* Плавный переход эффектов */
+  }
